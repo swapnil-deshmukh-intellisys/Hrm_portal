@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+/* General Body Styling */
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbe1e5;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;               /* Ensure the navbar uses flexbox */
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(116, 149, 153);
+    color: black;
+    height: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for navbar */
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex: 1;                     /* Allow the logo to take available space */
+    text-align: center;          /* Center align the text inside logo */
+}
+
+.navbar .icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar .icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.navbar .icons i:hover {
+    transform: scale(1.1); /* Icon hover effect */
+}
+
+
+/* Container below Navbar */
+.container {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container2 {
+    width: 100%;
+    color: black;
+    background-color: #f9f9f9;
+    height: 40px;
+    text-align: justify;
+    margin-left: 15px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for the container */
+}
+
+/* Employee Details Section */
+.employee-details {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 1rem;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow for employee details */
+}
+
+.employee-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.employee-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.employee-info label {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.employee-info span {
+    font-weight: normal;
+    color: #555;
+}
+
+/* Flexbox container for multiple cards */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+/* Card Styles */
+.card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the cards */
+    background: linear-gradient(135deg, white, white); /* Beautiful gradient background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    background: linear-gradient(135deg, white, #7290ad); /* Beautiful gradient change on hover */
+}
+
+
+.card-body {
+    padding: 10px;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: black;
+}
+
+/* Card Header */
+.card-header {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    background: linear-gradient(135deg, white,grey); /* Gradient header */
+}
+
+/* KYC and Employee Status Sections */
+.container2 p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Additional Styling */
+.card-text strong {
+    color:black; /* Color for strong text */
+}
+
+/* Make the layout responsive for smaller screens */
+@media (max-width: 768px) {
+    .employee-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .icons {
+        justify-content: center;
+    }
+}
+
