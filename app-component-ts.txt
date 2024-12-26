@@ -1,0 +1,18 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { RightHandSideComponent } from './right-hand-side/right-hand-side.component';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [SidebarComponent, RightHandSideComponent], // Declare both standalone components
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  title ='hrm1project';
+   
+  }
+
+
