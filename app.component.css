@@ -1,0 +1,16 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+   
+  }
+  
+  app-sidebar {
+    flex: 1;
+   background-color: #333;
+    color: white;
+  }
+  
+  app-right-hand-side {
+    flex: 6 ;
+  }
+  
