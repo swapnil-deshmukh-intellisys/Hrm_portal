@@ -1,0 +1,298 @@
+body, html {
+  height: 100%; /* Ensures the page occupies full height */
+  margin: 0; /* Removes default margin */
+  
+} 
+
+*
+{
+  font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.company-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 4px; /* Optional rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  height: 49px; /* Adjust height as needed */
+ background-image: url("/assets/blue.jpg");
+}
+
+/* Centered Company Name */
+.company-name {
+  position: absolute;
+  left: 56%;
+  transform: translateX(-50%);
+  font-size: 19px;
+  font-weight: bold;
+  color: #e3d4d4;
+  font-family: Arial, sans-serif;
+}
+
+/* Right Content Container */
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between employee details, photo, and notification */
+  margin-left: auto;
+  background-color: white;
+}
+
+/* Employee Details Flex */
+.employee-details {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+/* Employee Name and ID Styling */
+.employee-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.employee-id {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Employee Photo */
+.employee-photo {
+  height: 40px; /* Adjust size as needed */
+  width: 40px;
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover; /* Ensures the image fits within the circle */
+}
+
+/* Notification Icon */
+.notification-icon {
+  height: 29px;
+  width: 29px;
+  cursor: pointer; /* Changes to pointer on hover */
+}
+
+
+/* Reset body styles */
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 99%;
+  margin-left: 6px;
+
+}
+
+/* Welcome Section */
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px; /* Add internal spacing */
+  margin: 20px 0; /* Add top and bottom gap */
+  background: #fffcfc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.welcome-text {
+  flex: 1;
+}
+
+.employee-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.employee-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.welcome-text h2 {
+  margin: 0;
+  font-size: 38px;
+  color: #333;
+}
+
+.welcome-text p {
+  margin-left: 104px;
+  margin-top: -12px; 
+  font-size: 15px;
+  color: #666;
+  gap: 6px;
+}
+
+.officelogo {
+  flex-shrink: 0;
+  
+}
+
+.officelogo img {
+ 
+    width: 315px; /* Adjust the logo size here */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: Add rounded corners if needed */
+    margin-right: -30px;
+}
+
+/* Adjust spacing for below containers */
+.container-below {
+  margin-top: 20px; /* Sufficient space between sections */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .officelogo {
+    margin-top: 10px;
+    align-self: center;
+  }
+
+  .employee-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .welcome-text h2 {
+    font-size: 18px;
+  }
+
+  .welcome-text p {
+    font-size: 12px;
+  }
+
+  .officelogo img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .welcome-text h2 {
+    font-size: 16px;
+  }
+
+  .welcome-text p {
+    font-size: 10px;
+  }
+}
+
+
+.current-time {
+  font-size: 19px;
+  font-weight: bold;
+  color: #fafdff;
+  margin-top: 44px;
+  margin-right: 141px;
+
+}
+
+
+
+/* Content Section */
+.content-section {
+  margin-left: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+/* Current Time Box */
+.content1-box {
+  background-image: url("/assets/blue.jpg");
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+/* Content Boxes */
+.content-box {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content-box h4 {
+  border-radius: 8px;
+  margin: -46px -50px 50px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #fffbfb;
+  padding: 7px;
+  background-color: skyblue;
+}
+
+.content-remind h4
+{
+  border-radius: 8px;
+  margin: 2px -7px 50px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #fffbfb;
+  padding: 7px;
+  background-color: skyblue;
+
+}
+
+.content-box p,
+.content-box ul {
+  font-size: 14px;
+  color: #495057;
+  margin: 0;
+}
+
+.content-box ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.content-box ul li {
+  margin: 5px 0;
+}
+
+.content-remind {
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.officelogo {
+  text-align: right;
+}
